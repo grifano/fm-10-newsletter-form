@@ -1,21 +1,30 @@
-.footer {
-  padding: 20px 0;
-}
-.footer-desc {
+/*** Attribution footer ***/
+.attribution {
+  color: var(--text-body-color);
+  padding: 16px;
   text-align: center;
 }
-.footer-link {
-  position: relative;
+.attribution_wrap {
+  margin: 0 auto;
+  max-width: 24ch;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+.attribution a {
+  text-decoration: underline;
+  opacity: 0.7;
+  transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.attribution a:hover,
+.attribution a:focus {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .attribution {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .attribution_wrap {
+    max-width: 100%;
+  }
 }

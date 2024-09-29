@@ -1,0 +1,15 @@
+/*** Variables ***/
+:root {
+  /*** Primitives ***/
+  --color-dark-grey: #6e8098;
+  --color-grey: #48556a;
+  --color-light-grey: #ecf2f8;
+
+  /*** Colors ***/
+  --bg-body-color: #ecf2f8;
+  --text-body-color: var(--color-dark-grey);
+  --text-heading-color: var(--color-grey);
+
+  /*** Fonts ***/
+  --font-family: 'Roboto', sans-serif;
+}

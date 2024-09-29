@@ -1,0 +1,69 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-flex-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-flex-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/*
+This CSS code is used to control the appearance 
+and rendering of fonts and text on a webpage. 
+Here's a breakdown of each property:
+
+font-synthesis: none;
+This property prevents the browser from automatically 
+synthesizing missing font styles. Normally, if a font 
+doesn't have a bold or italic version, the browser will 
+simulate it. Setting this to none disables that simulation, 
+ensuring that only actual font styles are used.
+
+text-rendering: optimizeLegibility;
+This property instructs the browser to use better font 
+rendering techniques to improve legibility, especially 
+for text containing small fonts or detailed characters (like ligatures). 
+It prioritizes better text shaping, especially for larger blocks of text.
+
+-webkit-font-smoothing: antialiased;
+This is a WebKit-specific property (used in browsers like Safari and Chrome) 
+that improves the smoothness of fonts, particularly on non-retina displays. 
+By setting it to antialiased, the browser will focus on making the edges of 
+the text smoother and less jagged, which can enhance readability.
+
+-moz-osx-font-smoothing: grayscale;
+This is a similar property to the previous one but applies to Firefox on macOS. 
+By setting it to grayscale, the text rendering focuses on making the fonts 
+look crisper and clearer by using grayscale antialiasing, rather than 
+full-color antialiasing.
+
+-webkit-text-size-adjust: 100%;
+This property is specific to WebKit browsers and controls how text is 
+scaled on mobile devices. By setting it to 100%, it ensures that 
+the text size remains consistent and does not automatically scale up or 
+down based on the device's settings or user gestures, providing a more 
+consistent user experience across devices.
+
+*/
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
