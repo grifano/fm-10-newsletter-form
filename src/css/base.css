@@ -8,33 +8,59 @@ body {
   padding: 0;
 }
 main {
-}
-section {
-}
-
-/*** Container ***/
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 393px;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 991px) {
-  .container {
-    max-width: 1158px;
-  }
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*** Buttons ***/
 button {
   font-family: inherit;
   border: none;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   outline: none;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--color-dark-navy);
+  min-height: 56px;
+  padding: 18px 24px;
+  border-radius: 8px;
+}
+button {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  background: var(--color-dark-navy);
+  min-height: 56px;
+  padding: 18px 24px;
+  border-radius: 8px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+@media screen and (min-width: 991px) {
+  button:focus-visible,
+  button:hover {
+    background: linear-gradient(204.47deg, #ff6a3a 0%, #ff527b 100%);
+    box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5);
+  }
+}
+
+/*** Visually hide element, but keep visible for search engine ***/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

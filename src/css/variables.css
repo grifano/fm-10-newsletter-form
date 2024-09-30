@@ -1,15 +1,14 @@
 /*** Variables ***/
 :root {
-  /*** Primitives ***/
-  --color-dark-grey: #6e8098;
-  --color-grey: #48556a;
-  --color-light-grey: #ecf2f8;
+  /* Primitives */
+  --color-dark-navy: #36384d;
 
-  /*** Colors ***/
-  --bg-body-color: #ecf2f8;
-  --text-body-color: var(--color-dark-grey);
-  --text-heading-color: var(--color-grey);
+  /* Colors */
+  --bg-body-color: var(--color-dark-navy);
 
-  /*** Fonts ***/
+  /* Desktop - Success */
+  --text-body-color: var(--color-dark-navy);
+
+  /* Fonts */
   --font-family: 'Roboto', sans-serif;
 }
