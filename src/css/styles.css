@@ -10,3 +10,6 @@
 @import url('./variables.css');
 @import url('./base.css');
 @import url('./footer.css');
+
+/* Sections */
+@import url('./section-newsletter.css');
