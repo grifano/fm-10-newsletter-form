@@ -1,13 +1,13 @@
 /*** Attribution footer ***/
 .attribution {
-  color: var(--text-body-color);
+  color: #fcfcfc;
   padding: 16px;
   text-align: center;
 }
 .attribution_wrap {
   margin: 0 auto;
-  max-width: 24ch;
 }
+
 .attribution a {
   text-decoration: underline;
   opacity: 0.7;
