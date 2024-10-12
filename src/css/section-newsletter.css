@@ -53,6 +53,13 @@
   font-size: 12px;
   font-weight: 700;
   color: #ff6155;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  &.isShow {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 .newsletter-input {
   font-family: 'Roboto Flex' sans-serif;
